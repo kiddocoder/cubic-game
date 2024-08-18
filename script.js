@@ -1,5 +1,5 @@
 
-/**==============================================
+ /**==============================================
  * AUTHOR : NDAYIKEZA TRESOR , Kiddo coder pro 	||
  * EMAIL : ndayikezatresor9@gmail.com          	||
  * COUNTRY : BURUNDI                           	||
@@ -7,8 +7,8 @@
  * TARGET : TEST JS EXPERIENCES IN 3D         	||
  *///============================================
 
- const music = new Audio('musics/happyrock.mp3');
- music.play();
+ const music = new Audio('./musics/happyrock.mp3');
+ music&&(music.loop = !0,music.play());
 
  const colors = ['blue', 'green', 'white', 'yellow', 'orange', 'red'],
 		pieces = document.getElementsByClassName('piece');
