@@ -5,14 +5,14 @@ html, body {
       background-color: #2F2F31;
       background-blend-mode: overlay;
     }
-    
+
     .credits {
       width: 100%;
       left: 50%;
       top: 10%;
       float: right;
     }
-    
+
     .text {
       text-align: center;
       font-family: Helvetica;
@@ -20,7 +20,7 @@ html, body {
       color: grey;
       pointer-events: none;
     }
-    
+
     .centered, .cube > .piece > .element > .sticker {
       position: absolute;
       top: 0;
@@ -29,7 +29,7 @@ html, body {
       right: 0;
       margin: auto;
     }
-    
+
     .scene {
       width: 100%;
       height: 100%;
@@ -49,12 +49,12 @@ html, body {
       position: absolute;
       transform-style: inherit;
     }
-    
+
     #piece4 > .element.top > .sticker {
       background-image: URL("http://i63.tinypic.com/25hh1xu.png");
       background-size: cover;
     }
-    
+
     .cube {
       font-size: 190%;
       margin-left: -1em;
