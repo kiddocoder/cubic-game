@@ -1,7 +1,10 @@
 html, body {
       height: 100%;
       overflow: hidden;
-      background: #f1f1f1;
+      background: #f1f1f106;
+      background-image: url(./images/stars.gif);
+      background-repeat: no-repeat;
+      background-size: cover;
       background-blend-mode: overlay;
     }
 
@@ -10,13 +13,18 @@ html, body {
       display: flex;
       justify-content: space-between;
       width: 45vw;
-      background: rgb(200, 141, 255);
+      color: #d2d2d2;
     }
     #score-counter, #clock-counter{
-      color: #0a0a0a;
+      color: #fff;
       font-size: 24px;
       line-height: 36px;
       font-weight: 600;
+    }
+    .score-item{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
     }
     .text {
       text-align: center;
@@ -120,4 +128,14 @@ html, body {
     }
     .cube > .piece > .element > .sticker.red {
       background-color: #DF0500;
+    }
+
+    footer{
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    z-index: 1;
     }

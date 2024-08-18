@@ -107,6 +107,36 @@ function mousedown(md_e) {
 	scene.removeEventListener('mousedown', mousedown);
 }
 
+function StartTimer() {
+	let timer = document.getElementById('clock-counter');
+	let minutes = 0;
+	let hours = 0;
+	let secondes = 0;
+
+	setInterval(() => {
+	    secondes++;
+
+	    if (secondes === 60) {
+		  secondes = 0;
+		  minutes++;
+
+		  if (minutes === 60) {
+			minutes = 0;
+			hours++;
+		  }
+	    }
+
+	    const formattedHours = String(hours).padStart(2, '0');
+	    const formattedMinutes = String(minutes).padStart(2, '0');
+	    const formattedSecondes = String(secondes).padStart(2, '0');
+
+	    timer.innerText = `${formattedHours}:${formattedMinutes}:${formattedSecondes}`;
+	}, 1000);
+}
+
+function stopTimer() {
+
+}
 document.ondragstart = function() { return false; }
 window.addEventListener('load', assembleCube);
 scene.addEventListener('mousedown', mousedown);

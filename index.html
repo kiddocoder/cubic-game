@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,241 +6,33 @@
       <meta name="keywords" content="left,right,top,bottom,back,front">
       <meta name="description" content="Cubic Game made with love by Kiddo coder pro ">
       <title>Cubic 3D Game </title>
-      <link rel="stylesheet" href="style.css">
+      <style>
+            body{
+                  position: relative;
+                  display: flex;
+                  height: 100vh;
+                  overflow: hidden;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+            }
+            .get{
+                  padding: 10px 20px;
+                  background-color: blue;
+                  color:white;
+                  font-size: 18px;
+                  border: 1px solid transparent;
+                  border-radius: 20px;
+                  cursor: pointer;
+            }
+            .git:hover{
+                  background-color: rgb(7, 7, 92);
+                  border-radius: 0px;
+            }
+      </style>
 </head>
 <body>
-
-<div class="credits">
-  <div class="score-item">
-    Score :
-    <span id="score-counter">+1</span>
-  </div>
-  <div class="score-item">
-    Clock :
-    <span id="clock-counter">00:12</span>
-  </div>
-</div>
-
-<div class="scene" id="scene">
-      <div class="pivot centered" id="pivot" style="transform: rotateX(-35deg) rotateY(-135deg)">
-        <div class="cube" id="cube">
-          <div class="piece">
-            <div class="element left"></div>
-            <div class="element right"></div>
-            <div class="element top"></div>
-            <div class="element bottom"></div>
-            <div class="element back"></div>
-            <div class="element front"></div>
-          </div>
-          <div class="piece">
-            <div class="element left"></div>
-            <div class="element right"></div>
-            <div class="element top"></div>
-            <div class="element bottom"></div>
-            <div class="element back"></div>
-            <div class="element front"></div>
-          </div>
-          <div class="piece">
-            <div class="element left"></div>
-            <div class="element right"></div>
-            <div class="element top"></div>
-            <div class="element bottom"></div>
-            <div class="element back"></div>
-            <div class="element front"></div>
-          </div>
-          <div class="piece">
-            <div class="element left"></div>
-            <div class="element right"></div>
-            <div class="element top"></div>
-            <div class="element bottom"></div>
-            <div class="element back"></div>
-            <div class="element front"></div>
-          </div>
-          <div class="piece">
-            <div class="element left"></div>
-            <div class="element right"></div>
-            <div class="element top"></div>
-            <div class="element bottom"></div>
-            <div class="element back"></div>
-            <div class="element front"></div>
-          </div>
-          <div class="piece">
-            <div class="element left"></div>
-            <div class="element right"></div>
-            <div class="element top"></div>
-            <div class="element bottom"></div>
-            <div class="element back"></div>
-            <div class="element front"></div>
-          </div>
-          <div class="piece">
-            <div class="element left"></div>
-            <div class="element right"></div>
-            <div class="element top"></div>
-            <div class="element bottom"></div>
-            <div class="element back"></div>
-            <div class="element front"></div>
-          </div>
-          <div class="piece">
-            <div class="element left"></div>
-            <div class="element right"></div>
-            <div class="element top"></div>
-            <div class="element bottom"></div>
-            <div class="element back"></div>
-            <div class="element front"></div>
-          </div>
-          <div class="piece">
-            <div class="element left"></div>
-            <div class="element right"></div>
-            <div class="element top"></div>
-            <div class="element bottom"></div>
-            <div class="element back"></div>
-            <div class="element front"></div>
-          </div>
-          <div class="piece">
-            <div class="element left"></div>
-            <div class="element right"></div>
-            <div class="element top"></div>
-            <div class="element bottom"></div>
-            <div class="element back"></div>
-            <div class="element front"></div>
-          </div>
-          <div class="piece">
-            <div class="element left"></div>
-            <div class="element right"></div>
-            <div class="element top"></div>
-            <div class="element bottom"></div>
-            <div class="element back"></div>
-            <div class="element front"></div>
-          </div>
-          <div class="piece">
-            <div class="element left"></div>
-            <div class="element right"></div>
-            <div class="element top"></div>
-            <div class="element bottom"></div>
-            <div class="element back"></div>
-            <div class="element front"></div>
-          </div>
-          <div class="piece">
-            <div class="element left"></div>
-            <div class="element right"></div>
-            <div class="element top"></div>
-            <div class="element bottom"></div>
-            <div class="element back"></div>
-            <div class="element front"></div>
-          </div>
-          <div class="piece">
-            <div class="element left"></div>
-            <div class="element right"></div>
-            <div class="element top"></div>
-            <div class="element bottom"></div>
-            <div class="element back"></div>
-            <div class="element front"></div>
-          </div>
-          <div class="piece">
-            <div class="element left"></div>
-            <div class="element right"></div>
-            <div class="element top"></div>
-            <div class="element bottom"></div>
-            <div class="element back"></div>
-            <div class="element front"></div>
-          </div>
-          <div class="piece">
-            <div class="element left"></div>
-            <div class="element right"></div>
-            <div class="element top"></div>
-            <div class="element bottom"></div>
-            <div class="element back"></div>
-            <div class="element front"></div>
-          </div>
-          <div class="piece">
-            <div class="element left"></div>
-            <div class="element right"></div>
-            <div class="element top"></div>
-            <div class="element bottom"></div>
-            <div class="element back"></div>
-            <div class="element front"></div>
-          </div>
-          <div class="piece">
-            <div class="element left"></div>
-            <div class="element right"></div>
-            <div class="element top"></div>
-            <div class="element bottom"></div>
-            <div class="element back"></div>
-            <div class="element front"></div>
-          </div>
-          <div class="piece">
-            <div class="element left"></div>
-            <div class="element right"></div>
-            <div class="element top"></div>
-            <div class="element bottom"></div>
-            <div class="element back"></div>
-            <div class="element front"></div>
-          </div>
-          <div class="piece">
-            <div class="element left"></div>
-            <div class="element right"></div>
-            <div class="element top"></div>
-            <div class="element bottom"></div>
-            <div class="element back"></div>
-            <div class="element front"></div>
-          </div>
-          <div class="piece">
-            <div class="element left"></div>
-            <div class="element right"></div>
-            <div class="element top"></div>
-            <div class="element bottom"></div>
-            <div class="element back"></div>
-            <div class="element front"></div>
-          </div>
-          <div class="piece">
-            <div class="element left"></div>
-            <div class="element right"></div>
-            <div class="element top"></div>
-            <div class="element bottom"></div>
-            <div class="element back"></div>
-            <div class="element front"></div>
-          </div>
-          <div class="piece">
-            <div class="element left"></div>
-            <div class="element right"></div>
-            <div class="element top"></div>
-            <div class="element bottom"></div>
-            <div class="element back"></div>
-            <div class="element front"></div>
-          </div>
-          <div class="piece">
-            <div class="element left"></div>
-            <div class="element right"></div>
-            <div class="element top"></div>
-            <div class="element bottom"></div>
-            <div class="element back"></div>
-            <div class="element front"></div>
-          </div>
-          <div class="piece">
-            <div class="element left"></div>
-            <div class="element right"></div>
-            <div class="element top"></div>
-            <div class="element bottom"></div>
-            <div class="element back"></div>
-            <div class="element front"></div>
-          </div>
-          <div class="piece">
-            <div class="element left"></div>
-            <div class="element right"></div>
-            <div class="element top"></div>
-            <div class="element bottom"></div>
-            <div class="element back"></div>
-            <div class="element front"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="guide">
-      <div class="anchor" id="anchor3" style="transform: translateZ(3px) translateY(-33.33%) rotate(-270deg) translateY(66.67%)"></div>
-      <div class="anchor" id="anchor2" style="transform: translateZ(3px) translateY(-33.33%) rotate(-180deg) translateY(66.67%)"></div>
-      <div class="anchor" id="anchor1" style="transform: translateZ(3px) translateY(-33.33%) rotate(-90deg) translateY(66.67%)"></div>
-      <div class="anchor" id="anchor0" style="transform: translateZ(3px) translateY(-33.33%) rotate(0deg) translateY(66.67%)"></div>
-    </div>
-    <script src="script.js"></script>
+      <img src="./images/cube.png" alt="cuber" srcset="./images/cube.png">
+      <button onclick="window.location.href='./game.html'" type="button" class="get">Get started</button>
 </body>
 </html>
