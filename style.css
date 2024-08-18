@@ -1,31 +1,88 @@
-html, body {
-      height: 100%;
-      overflow: hidden;
-      background: #f1f1f106;
-      background-image: url(./images/stars.gif);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-blend-mode: overlay;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    .credits {
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-      width: 45vw;
-      color: #d2d2d2;
-    }
-    #score-counter, #clock-counter{
-      color: #fff;
-      font-size: 24px;
-      line-height: 36px;
-      font-weight: 600;
-    }
-    .score-item{
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
+html, body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  background: #1a1a2e;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: #16213e;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.game-info {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #e94560;
+}
+
+.info-item svg {
+  margin-right: 10px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.control-button {
+  background: #0f3460;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control-button:hover {
+  background: #16213e;
+  transform: scale(1.1);
+}
+
+.control-button svg {
+  width: 30px;
+  height: 30px;
+  fill: #ffffff;
+}
+
+.scene {
+  flex-grow: 1;
+  perspective: 1200px;
+  transform-style: preserve-3d;
+}
     .text {
       text-align: center;
       font-family: Helvetica;
@@ -43,12 +100,12 @@ html, body {
       margin: auto;
     }
 
-    .scene {
+    /* .scene {
       width: 100%;
       height: 100%;
       perspective: 1200px;
       transform-style: preserve-3d;
-    }
+    } */
     .scene > .pivot {
       width: 0;
       height: 0;
@@ -130,7 +187,7 @@ html, body {
       background-color: #DF0500;
     }
 
-    footer{
+    /* footer{
     position: absolute;
     bottom: 4px;
     left: 0;
@@ -138,4 +195,35 @@ html, body {
     text-align: center;
     color: white;
     z-index: 1;
+    } */
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #16213e;
+      color: #ffffff;
+  }
+
+    @media (max-width: 768px) {
+      .header h1 {
+          font-size: 2rem;
+      }
+
+      .game-info {
+          flex-direction: column;
+          align-items: center;
+      }
+
+      .info-item {
+          margin-bottom: 10px;
+      }
+
+      .control-button {
+          width: 50px;
+          height: 50px;
+      }
+
+      .control-button svg {
+          width: 25px;
+          height: 25px;
+      }
     }
