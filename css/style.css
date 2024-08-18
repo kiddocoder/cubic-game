@@ -197,10 +197,15 @@ html, body {
     z-index: 1;
     } */
     footer {
-      text-align: center;
-      padding: 10px;
-      background: #16213e;
-      color: #ffffff;
+     position: absolute;
+     bottom: 4px;
+     left: 0;
+     width: 100%;
+     text-align: center;
+     padding: 10px;
+     background: #16213e;
+     color: #ffffff;
+     z-index: 1;
   }
 
     @media (max-width: 768px) {

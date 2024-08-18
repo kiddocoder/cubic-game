@@ -7,106 +7,7 @@
     <meta name="description" content="Cubic Game made with love by Kiddo coder pro">
     <title>Cubic 3D Game</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
-            color: #ffffff;
-            overflow: hidden;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            max-width: 600px;
-        }
-
-        .cube-image {
-            width: 200px;
-            height: 200px;
-            margin-bottom: 2rem;
-            animation: float 3s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-            100% { transform: translateY(0px); }
-        }
-
-        .get-started {
-            padding: 15px 30px;
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: #ffffff;
-            background-color: #e94560;
-            border: none;
-            border-radius: 30px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            box-shadow: 0 4px 15px rgba(233, 69, 96, 0.5);
-        }
-
-        .get-started:hover {
-            background-color: #d63852;
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(233, 69, 96, 0.7);
-        }
-
-        .get-started:active {
-            transform: translateY(1px);
-        }
-
-        .background-cube {
-            position: absolute;
-            width: 50px;
-            height: 50px;
-            background: rgba(255, 255, 255, 0.1);
-            animation: rotate 20s linear infinite;
-            z-index: -1;
-        }
-
-        @keyframes rotate {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5rem;
-            }
-
-            p {
-                font-size: 1rem;
-                padding: 0 20px;
-            }
-
-            .cube-image {
-                width: 150px;
-                height: 150px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <div class="container">
@@ -115,13 +16,6 @@
         <img src="./images/cube.png" alt="Rubik's Cube" class="cube-image">
         <button onclick="window.location.href='./game.html'" type="button" class="get-started">Get Started</button>
     </div>
-
-    <!-- Background animated cubes -->
-    <div class="background-cube" style="top: 10%; left: 10%;"></div>
-    <div class="background-cube" style="top: 70%; left: 80%;"></div>
-    <div class="background-cube" style="top: 40%; left: 60%;"></div>
-    <div class="background-cube" style="top: 80%; left: 30%;"></div>
-    <div class="background-cube" style="top: 20%; left: 90%;"></div>
     <script src="./scripts/main.js"></script>
 </body>
 </html>
