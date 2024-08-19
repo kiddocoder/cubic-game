@@ -133,10 +133,6 @@ function StartTimer() {
 	    timer.innerText = `${formattedHours}:${formattedMinutes}:${formattedSecondes}`;
 	}, 1000);
 }
-
-function stopTimer() {
-
-}
 document.ondragstart = function() { return false; }
 window.addEventListener('load', assembleCube);
 scene.addEventListener('mousedown', mousedown);
