@@ -282,7 +282,7 @@ class RubiksCube {
       }
   }
 
-  // Initialiser le jeu
+  // Initialiser le jeu;
   document.addEventListener('DOMContentLoaded', () => {
       new RubiksCube();
   });
